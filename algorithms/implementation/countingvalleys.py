@@ -1,5 +1,6 @@
 # https://www.hackerrank.com/challenges/counting-valleys/problem
 
+
 def countingValleys(s):
     prev_el = 0
     elevation = 0
@@ -19,6 +20,7 @@ def countingValleys(s):
             is_valley = False
 
     print(vals)
+
 
 n = input()
 s = input().strip()
