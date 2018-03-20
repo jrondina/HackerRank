@@ -48,7 +48,6 @@ def has_num(password):
     return False
 
 
-
 def has_special(password):
     special = "!@#$%^&*()-+"
     return len(set(password) & set(special)) > 0
