@@ -14,10 +14,21 @@ def getMoneySpent(keyboards, drives, s):
                     total = x + y
                 else:
                     pass
+    else:
+        for x in drives:
+            for y in list(filter(lambda z: z >= min(keyboards) and z < s - x, keyboards)):
+                if x + y == s:
+                    return s
+                elif x + y > s:
+                    pass
+                elif s > x + y > total:
+                    total = x + y
+                else:
+                    pass
+    if total > 0:
         return total
-
-
-    print(keyboards, drives)
+    else:
+        return -1
 
 
 s,n,m = input().strip().split(' ')
